@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/* CSS Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #0f0e0e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-header {
+    background-size: cover;
+    background-color: rgb(53, 85, 190);
+    background-blend-mode: multiply;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  main{
+    flex: 1;
+  }
+
+  .nav {
+    margin: 0;
+    color: #ffffff;
+
+  }
+
+  .nav li{
+    display: inline;
+    color: #ffffff;
+    text-size-adjust: 150%;
+    padding: 10px;
+  }
+
+  .nav li:hover{
+    background-color: rgb(226, 13, 95);
+  }
+
+  .nav1{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: white underline;
+    color: #ffffff;
+    text-align: center;
+    font-size: 110%;
+  }
+
+  .nav2{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none; 
+    color: #ffffff;
+    text-align: center;
+    font-size: 110%;
+  }
+
+  .horiline{
+    color: #ffffff2f;
+  }
+
+  .about{
+    padding-left: 10px;
+    color: rgb(211, 25, 140);
+    text-align: center;
+  }
+
+  .secondhead{
+    padding-left: 15px;
+  }
+
+  .para{
+    padding-left: 15px;
+  }
+
+  .main-footer{
+    background-size: cover;
+    background-color: rgb(53, 85, 190);
+    background-blend-mode: multiply;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .parent {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .child {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+  

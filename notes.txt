@@ -1,0 +1,30 @@
+Headers
+- Home
+- About the team
+- Background 
+- Design / Results / Findings
+- Uvic Image
+
+
+
+
+
+
+Footer
+- Acknowledgements
+- UVic image
+= Blue Background
+
+
+
+
+Additional notes:
+
+to create buttons = use <button> </button>
+add line break = use <br>
+meaningless element to block text elements / one contained element = use <div> </div>
+bold text = <strong> </strong>
+for text under the google serach link use = <meta name = "description"  content = "this is the description">
+to add links use anchor tag = <a href = "file.html"> Link Text </a>
+to open links in same page = <a target = "_self"> Same tab link </a>
+to open links in new page = < a target = "_blank"> New tab link </a>
