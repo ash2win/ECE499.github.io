@@ -48,7 +48,9 @@ html, body {
   }
 
   .nav li:hover{
-    background-color: rgb(226, 13, 95);
+    background-color: rgb(32, 13, 206);
+    /*    background-color: rgb(226, 13, 95); */
+
   }
 
   .nav1{
@@ -76,6 +78,7 @@ html, body {
   .about{
     padding-left: 10px;
     color: rgb(211, 25, 140);
+   /* color: rgb(211, 25, 140);*/
     text-align: center;
   }
 
@@ -89,7 +92,7 @@ html, body {
   }
 
   .uvic_image{
-    width: 15%;
+    width: 100px;
     align-self: center;
   }
 
