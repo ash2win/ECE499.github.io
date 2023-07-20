@@ -99,9 +99,11 @@ html, body {
   }
 
   div.gallery {
-    margin: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     float: left;
-    width: 280px;
+    width: 50%;
     padding: auto;
   }
   
@@ -112,6 +114,7 @@ html, body {
   div.gallery img {
     width: 100%;
     height: auto;
+    padding: 30px;
     
   }
   
