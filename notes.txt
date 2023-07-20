@@ -28,3 +28,8 @@ for text under the google serach link use = <meta name = "description"  content 
 to add links use anchor tag = <a href = "file.html"> Link Text </a>
 to open links in same page = <a target = "_self"> Same tab link </a>
 to open links in new page = < a target = "_blank"> New tab link </a>
+
+
+
+
+*ADD PROPER TITLES FOR EACH PAGE*
