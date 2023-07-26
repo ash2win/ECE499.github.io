@@ -19,8 +19,7 @@ html, body {
   }
 
   ol{
-    padding-left: 30px;
-    padding-top: 0px;
+    padding: 30px;
   }
 
   .main-header {
@@ -169,6 +168,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   }
   
   .image-item img {
