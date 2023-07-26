@@ -168,4 +168,5 @@ html, body {
  /* Automatically adjusts the height to maintain the aspect ratio */
     max-height: 450px; /* Set a maximum height to limit the size of the images */
     object-fit: cover;
+    align-items: center;
   }
