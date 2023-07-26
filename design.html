@@ -33,11 +33,11 @@
           Hardware
         </h4>
         <ol>
-            <p class = "para">
-              <strong>
-                <li>Temperature Sensor</li>
-              </strong>
-              <br>
+          <li>
+          <strong>
+            Temperature Sensor
+          </strong>
+          <br><br>
               The Omron D6T-8L-09 digital infrared thermometer was chosen for this project. This sensor works by continuously 
               detecting radiant infrared energy and computing a temperature value from this. This is much better for our 
               application than other non-contact thermometers like Pyroelectric sensors as they can only detect temperature 
@@ -48,20 +48,78 @@
                 <li>X direction: 54.5°</li>
                 <li>Y direction: 5.5°</li>
               </ul>
-              <div class = "design_image">
-              <img src = "Images/temp_sensor.jpg">
-              <div class = "design_desc">D6T-8L-09 Sensor</div>
+              <div class = "image-container">
+                <div class = "image-item">
+                <img src = "Images/temp_sensor.jpg">
+                  <div class = "desc">
+                    D6T-8L-09 Sensor
+                  </div>
+                </div>
+                <div class = "image-item">
+                  <img src = "Images/temp_2.png">
+                    <div class = "desc">
+                      Viewing Angles
+                    </div>
+                  </div>
               </div>
-              <div class = "design_image">
-              <img src = "Images/temp_2.png">
-              <div class = "design_desc">Viewing Angles</div>
+          </li>
+          <br><br>
+          <li>
+          <strong>
+            Servos
+          </strong>
+          <br><br>  
+              The next big challenge is given an x,y coordinate to move two servos; one for the x-axis and one for the y-axis to center 
+              the temperature sensor on that given point. 
+              <br>
+              The way the coordinates worked from the camera side is that the frame is divided by the number of pixels in it with these rules:
+              <br>
+              <ul>
+                <li>The upper left corner is point (0,0)</li>
+                <li>The lower right corner is point (320,240)</li>
+                <li>The center of the frame is point (160,120)</li>
+              </ul>
+              <br>
+              The way the servos were implemented is that they are moved based off of a given duty cycle. The duty cycle values are arbitrary 
+              with a value of 500 being at an angle of 0 (all the way left) by these rules:
+              <ul>
+                <li>A value of 500 is an angle of 0° (all the way left)</li>
+                <li>A value of 2500 is an angle of 180° (all the way right)</li>
+                <li>A value of 1500 is an angle of 90° (centered)</li>
+              </ul>
+              <br>
+              When the program is started the servos are centered at 1500. A calculation is done to find the distance from the forehead coordinate 
+              to the center of the frame in both the x and y direction:
+              <ul>
+              <li>x<sub>distance</sub> = forehead<sub>x-coordinate</sub> - 160</li>
+              <li>y<sub>distance</sub> = forehead<sub>y-coordinate</sub> - 120</li>
+              </ul>
+              <br>
+              These absolute values for both x and y are checked if they are then within a margin of error. Through trial and error we found about 
+              a 10x10 box that gave consistent results. This step is crucial as if there was no margin of error the servos would constantly overshoot 
+              the centerpoint and oscillate back and forth over it. 
+
+              If x<sub>distance</sub> or y<sub>distance</sub> is greater than the margin of error the servos are then moved either left/right or up/down in the direction 
+              of the centerpoint. 
+              <br><br>
+              The amount they moved was arbitrarily set to be a value of 5 which corresponds to ~5°. This process is then repeated 
+              until the centerpoint is reached. Below is a visual representation of the frame and error box and a flowchart for the code. 
+              <br><br>
+              <div class = "image-container">
+                <div class = "image-item">
+                <img src = "Images/servo1.png">
+                  <div class = "desc">
+                    Frame Representation
+                  </div>
+                </div>
+                <div class = "image-item">
+                  <img src = "Images/servo2.png">
+                    <div class = "desc">
+                      Flowchart
+                    </div>
+                  </div>
               </div>
-            </p>
-            <p class = "para">
-              <strong>
-              <li>Temperature Sensor</li>
-              </strong>
-            </p>
+          </li>
         </ol>
     </main>
     <img src = "Images/uvic_logo.jpg" class = "uvic_image">
@@ -71,3 +129,5 @@
   </body>
 
 </html>
+
+
