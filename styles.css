@@ -96,6 +96,11 @@ html, body {
     color:  rgb(53, 85, 190);
     font-size: 110%;
   }
+  
+  .thirdhead_wo{
+    padding-top: 0px;
+    padding-left: auto;
+  }
 
   .para{
     padding-left: 15px;
