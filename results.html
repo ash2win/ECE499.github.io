@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Results
+  </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <h1>Autonomous Human Temperature Tracking</h1> <!-- section heading -->
+    <hr class="horiline">
+    <nav class="nav"> <!-- navigation links -->
+      <ul> <!-- unordered list -->
+        <li><a href="index.html" class="nav2">Home</a></li>
+        <li><a href="team.html" class="nav2">Team</a></li>
+        <li><a href="background.html" class="nav2">Background</a></li>
+        <li><a href="design.html" class="nav2">Design</a></li>
+        <li><a href="results.html" class="nav1">Results</a></li>
+        <li><a href="ackno.html" class="nav2">Acknowledgement</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section> <!-- generic section of a page -->
+      <h2 class="about">Results</h2>
+      <section>
+        <h3 class="secondhead"> Temperature Sensor Testing </h3>
+        <p class="para"> <!-- new paragraph--> <!-- -->
+            To calibrate and test the sensor we did 50 trials total on 4 different people at a distance of 30 cm away from the thermometer. 
+            The method for testing was to gather a baseline temperature using a standard oral thermometer; the Physio Logic Acuflex thermometer 
+            which claims to have an accuracy of ±0.1°C. After an oral reading was gathered and immediate reading from the Omron sensor was taken. 
+            The way a final temperature value is taken by the Omron sensor is that 10 readings are taken and then averaged to get the final value.
+            <br><br>
+            Any obvious outlier temperate readings (35°C < T < 41°C) are discarded in this averaging process to increase accuracy. 
+            These values were chosen as anything less than 35°C is considered hypothermic and anything greater than 41°C is considered a 
+            medical emergency and a person with these temperatures would not be able to walk around. To simulate fever-like temperatures, 
+            (38℃ and above) a rag soaked in hot water was placed on the test subjects forehead for 30 seconds, the temperature of the rag was 
+            taken using the oral thermometer then an experimental value was gathered using the A.T.T. 
+            <br><br>
+            <a href="Images/sentry.mp4" target="_blank"> Here</a> is a short video that showcases what the camera sees and tracks to help find the temperature.
+            <br><br>
+            <div class= "image-item">
+            <video width="50%" height="50%" controls>
+                <source src="Images/sentry.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <br><br>
+            <p class="para">
+            A graph of the real temp vs the measured temp is shown <a href="Images/temp_test.png" target="_blank"> here: </a> 
+            </p>
+            <br>
+            <div class = "image-container">
+                <div class = "image-item">
+                <img src = "Images/temp_test.png" style = "width: 100%;">
+                  <div class = "desc">
+                    <i>Temperature Comparison</i>
+                  </div>
+                </div>
+              </div>
+              <br>
+        </p>
+      </section>
+      <br>
+      <section>
+        <h3 class="secondhead"> Cost Analysis </h3>
+        <p class="para">
+          INSERT TEXT HERE!!!
+
+        
+        <br><br>
+        <div class = "image-container">
+        <div class = "image-item">
+        <img src = "Images/cost1.png" style = "width: 100%; height: 100%;">
+            <div class = "desc">
+        <i>Costs</i>
+        </div>
+        </div>
+        </div>
+        <br>
+        
+        </p>
+
+
+
+
+        <br><br>
+      </section>
+    </section>
+  </main>
+  <a href = "https://uvic.ca" class = "uvic_image"> <img src = "Images/uvic_logo.jpg" class = "uvic_image"> </a>
+  <footer class=main-footer>
+    UVic - ECE 499 Group #20, 2023
+  </footer>
+</body>
+
+</html>

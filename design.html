@@ -16,6 +16,7 @@
           <li><a href = "team.html" class = "nav2">Team</a></li>
           <li><a href = "background.html" class = "nav2">Background</a></li>
           <li><a href = "design.html" class = "nav1">Design</a></li>
+          <li><a href="results.html" class="nav2">Results</a></li>
           <li><a href = "ackno.html" class = "nav2">Acknowledgement</a></li>
           <!-- Make blue background for the headings -->
         </ul>
@@ -113,7 +114,68 @@
                   </div>
               </div>
               <br><br>
-          </li> 
+          </li>
+          <li><h4>
+            Ultrasonic Sensor
+            </h4>
+            The HC-SR04 ultrasonic sensor was chosen to act as a distance sensor for A.T.T. It provides distance measurements between the ranges of 2cm to 400cm. 
+            The way the module works is by sending eight 40kHz signals and waits for a pulse signal back to determine the distance.
+            The timing diagram for the sensor depicts the trigger input required and the echo pulse that’s received by the module. Below is an image that showcases the signals.
+            
+              <br><br>
+                <div class = "image-container">
+                  <div class = "image-item">
+                  <img src = "Images/ult1.png">
+                    <div class = "desc">
+                      <i></i>
+                    </div>
+                  </div>
+                </div>
+                <br><br>
+                <div class = "image-container">
+                  <div class = "image-item">
+                  <img src = "Images/ult2.png">
+                    <div class = "desc">
+                      <i>Timing Diagram</i>
+                    </div>
+                  </div>
+                </div>
+            <br><br>
+            </li> 
+            <li><h4>
+              Liquid Crystal Display (LCD)
+              </h4>
+              The 2x16 Liquid Crystal Display was chosen to help guide the user to an optimal temperature tracking distance with live feedback displaying the distance from the sensor, 
+              and after measurement, their recorded temperature. 
+              <br><br>
+              The LCD was connected to the Raspberry Pi to receive signals that carried the temperature and distance data and fed to the display. The connections for the LCD were as follows:
+              <br><br>
+              <ul>
+              <li>RS (Reset) connected to GPIO 22</li>
+              <li>EN (Enable) connected to GPIO 17</li>
+              <li>D4 - D7 connected to GPIO 18, 23, 24, 25</li>
+              <li>5V Vcc Input</li>
+              </ul>
+                <br><br>
+                  <div class = "image-container">
+                    <div class = "image-item">
+                    <img src = "Images/lcd1.png">
+                      <div class = "desc">
+                        <i>LCD Display</i>
+                      </div>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class = "image-container">
+                    <div class = "image-item">
+                    <img src = "Images/lcd2.png">
+                      <div class = "desc">
+                        <i>Contrast Adjusted Display</i>
+                      </div>
+                    </div>
+                  </div>
+              <br><br>
+              </li> 
         </ul>
         <h3 class = "secondhead" style = "color: rgb(53, 85, 190);">
           Physical Structure

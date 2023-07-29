@@ -13,6 +13,10 @@ html, body {
     height: 100%;
   }
 
+section{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
   body{
     display: flex;
     flex-direction: column;
